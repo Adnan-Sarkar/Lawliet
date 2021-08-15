@@ -1,0 +1,542 @@
+/*================== common css here ==================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+
+/*================== navigation css here ==================*/
+.nav-menu {
+    padding: 25px 0;
+}
+.nav-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 56px;
+}
+
+/* navigation responsiveness */
+@media only screen and (max-width: 991px) {
+    .navbar-nav{
+        margin: 0 !important;
+    }
+    .nav-link {
+        text-align: center;
+        margin-right: 0;
+    }
+    .nav-link:hover{
+        background: rgb(251, 251, 251);
+    }
+    .search{
+        padding: 10px 0;
+        background: rgb(246, 246, 246);
+        border-radius: 30px;
+        text-align: center;
+    }
+}
+
+/*================== banner css here ==================*/
+#banner {
+    background: #fff;
+}
+.banner-content {
+    padding-top: 170px;
+}
+.banner-title {
+    font-family: "Playfair Display", serif;
+    font-size: 90px;
+    font-weight: 700;
+    color: #094b72;
+    margin: 0;
+}
+.banner-paragraph {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 58px 100px 42px 0;
+    margin: 0;
+}
+.hero-btn {
+    padding: 25px 35px;
+    background: #094b72;
+    border-radius: 8px;
+    color: #fff;
+    transition: all 0.1s linear;
+}
+.hero-btn:hover{
+    background: #1282A6;
+    color: #fff;
+}
+.trusted-companies{
+    padding-top: 123px;
+}
+.trusted-companies span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #8B8C8C;
+}
+.companies {
+    width: 260px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.companies img {
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+/* banner responsiveness */
+@media only screen and (max-width: 991px) {
+    .banner-content {
+        padding-top: 30px;
+    }
+    .banner-title {
+        text-align: center;
+        font-size: 50px;
+    }
+    .banner-paragraph {
+        text-align: center;
+        padding: 58px 20px 42px 20px;
+    }
+    .hero-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .trusted-companies {
+        padding-top: 50px;
+        text-align: center;
+    }
+    .companies {
+        padding-bottom: 0;
+    }
+    .companies {
+        margin: 0 auto;
+    }
+    .banner-img{
+        width: 50% !important;
+        margin: 0 auto;
+    }
+}
+
+/*================== about css here ==================*/
+#about{
+    background: #F2FCFF;
+    padding: 120px 0;
+}
+.about-content .about-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+.about-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 46px;
+    padding-top: 25px;
+    color: #8B8C8C;
+    line-height: 36px;
+}
+
+.about-content-box{
+    padding: 35px;
+    background: #FCFCFC;
+    border-radius: 8px;
+    box-shadow: 0 18px 58px 16px rgba(0, 0, 0, 0.06);
+    transition: all 0.1s linear;
+}
+.about-content-box:hover{
+    box-shadow: 0 18px 58px 16px rgba(0, 0, 0, 0.1);
+}
+.about-content-box h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding-right: 88px;
+    padding-top: 24px;
+}
+.about-content-box p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 5px;
+    color: #8B8C8C;
+    margin-bottom: 0;
+}
+
+/* about responsiveness */
+@media only screen and (max-width: 991px) {
+    #about {
+        padding: 50px 0;
+    }
+    .about-content .about-title {
+        font-size: 35px;
+        text-align: center;
+    }
+    .about-content p {
+        font-size: 16px;
+        text-align: center;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    #about {
+        padding: 50px 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about-content-box {
+        text-align: center;
+    }
+    .about-content-box h3 {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 992px) {
+    .about-content .about-title {
+        font-size: 36px;
+    }
+    .about-content p {
+        padding-right: 0;
+    }
+}
+
+/*================== count css here ==================*/
+#achievement{
+    background: url(../images/Achievement.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+}
+.achievement-title h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #fff;
+}
+.achievement-title p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.countDown h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #fff;
+}
+.countDown span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.countDown-left{
+    width: 30%;
+}
+.countDown-middle{
+    width: 30%;
+    border-left: 1px solid #71B4CA;
+    border-right: 1px solid #71B4CA;
+}
+.countDown-right{
+    width: 30%;
+}
+
+/* count responsiveness */
+@media only screen and (max-width: 991px) {
+    .achievement-title h2 {
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+    .achievement-title p {
+        font-size: 16px;
+    }
+
+    .countDown h3 {
+        font-size: 35px;
+    }
+    .countDown span {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .achievement-countDown{
+        flex-direction: column;
+    }
+    .countDown-middle {
+        padding: 30px 0;
+        border-left: 0px;
+        border-right: 0px;
+    }
+    .countDown-left{
+        width: 100%;
+    }
+    .countDown-middle{
+        width: 100%;
+    }
+    .countDown-right{
+        width: 100%;
+    }
+}
+
+
+/*================== testimonial css here ==================*/
+#testimonial{
+    padding: 90px 0;
+    background: #F4FBFF;
+}
+.testimonial-title h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.slide-content{
+    margin: 0 30px;
+}
+.slide-content-top {
+    position: relative;
+    background: #fff;
+    padding: 35px 0;
+    border-radius: 10px;
+    box-shadow: 0 18px 20px 10px rgb(0 0 0 / 6%);
+}
+.slide-content-top h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.slide-content-top p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #656565;
+    padding:0 37px;
+}
+.cornerBox{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    bottom: -20px;
+    left: 50%;
+    transform: rotate(45deg) translateX(-50%);
+}
+.testimonial-profile{
+    padding-top: 30px;
+}
+.testimonial-profile-details h4{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.testimonial-profile-details p{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/*================== call-to-action css here ==================*/
+#contact{
+    position: relative;
+}
+.contact-content-left{
+    padding-top: 50px;
+    padding-bottom: 36px;
+}
+.contact-content-left h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+.contact-content-left p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #4F4F4F;
+    padding-right: 500px;
+    padding-bottom: 10px;
+}
+.contact-content-left .contact-button button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 15px 40px;
+    background: #0F6E8C;
+    color: #fff;
+    border-radius: 10px;
+}
+.contact-content-left .contact-button button:hover{
+    background: #118eb4;
+    color: #fff;
+}
+.contact-content-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* call-to-action responsiveness */
+@media only screen and (max-width: 991px) {
+    #contact{
+        padding-bottom: 20px;
+    }
+    .contact-content{
+        flex-direction: column;
+    }
+    .contact-content-left h2 {
+        font-size: 48px;
+        text-align: center;
+    }
+    .contact-content-left p {
+        font-size: 16px;
+        padding-right: 0;
+        text-align: center;
+    }
+    .contact-button{
+        display: flex;
+        justify-content: center;
+    }
+    .contact-content-left .contact-button button{
+        padding: 10px 20px;
+    }
+
+    .contact-content-right {
+        position: static;
+    }
+    .contact-content-right img{
+        width: 100%;
+        border-radius: 30px;
+    }
+}
+
+
+/*================== footer css here ==================*/
+#footer{
+    padding: 100px 0;
+    background: #0F6E8C;
+}
+.footer-content h5{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.footer-content ul li{
+    margin-bottom: 15px;
+}
+.footer-content ul li a{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+    transition: all o.1s linear;
+}
+.footer-content ul li a:hover{
+    color: rgb(228, 228, 228);
+}
+.footer-link-list{
+    margin: 0;
+    padding: 0;
+}
+.footer-links-container{
+    justify-content: space-around;
+}
+
+/* footer responsiveness */
+@media only screen and (max-width: 767px){
+    #footer {
+        padding: 30px 0;
+    }
+    .footer-logo{
+        text-align: center;
+    }
+    .footer-links-container{
+        text-align: center;
+    }
+    .footer-links-colum:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .footer-content h5 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+
+/*================== copyright css here ==================*/
+#copyright{
+    background: #05546D;
+    padding: 25px 0;
+}
+.copyright-left p{
+    color: #D9DBE1;
+    margin: 0;
+}
+.copyright-right p{
+    margin: 0;
+}
+.social{
+    margin: 0;
+}
+.social li{
+    width: 35px;
+    height: 35px;
+    background: #3C798D;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-align: center;
+    transition: all 0.1s linear;
+}
+.social li:hover{
+    background: #569fb8;
+}
+.social li a{
+    line-height: 35px;
+    color: #fff;
+}
+
+/* copyright responsiveness */
+@media only screen and (max-width: 580px){
+    #copyright{
+        padding: 10px 0;
+    }
+    .copyright-left p{
+        padding-bottom: 10px;
+    }
+    .copyright-content{
+        flex-direction: column;
+    }
+    .social{
+        justify-content: center;
+    }
+    .copyright-right ul{
+        padding: 0;
+    }
+}
